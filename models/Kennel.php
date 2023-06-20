@@ -1,6 +1,9 @@
 <?php
 
 class Kennel extends Product {
-    public function __construct(public string $meat, public string $fish)
+    private function __construct (
+        private string $material, 
+        private string $dimension,
+        private array $type,)
     {}
 }

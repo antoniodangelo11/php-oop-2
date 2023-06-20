@@ -18,7 +18,13 @@
 <body>
     <div class="container">
         <div class="products">
-            <?= $Products->getAllInfo() ?>
+            <div class="game_product">
+
+            </div>
+
+            <div class="food_product">
+
+            </div>
         </div>
     </div>
 </body>
