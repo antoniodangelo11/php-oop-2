@@ -1,7 +1,7 @@
 <?php
 
-class Taste {
+class Type {
     public function __construct (
-        public string $taste
+        public string $type
     ) {}
 }

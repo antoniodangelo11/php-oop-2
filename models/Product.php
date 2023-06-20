@@ -1,7 +1,7 @@
 <?php
 
 class Product {
-    private function __construct (
+    public function __construct (
         protected string $title, 
         private int $price, 
         private string $img, 

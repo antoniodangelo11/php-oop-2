@@ -3,6 +3,9 @@
     include __DIR__ . '/models/Food.php';
     include __DIR__ . '/models/Game.php';
     include __DIR__ . '/models/Kennel.php';
+    include __DIR__ . '/models/Taste.php';
+    include __DIR__ . '/models/Material.php';
+    include __DIR__ . '/models/Type.php';
     include __DIR__ . '/db.php';
 ?>
 
@@ -17,7 +20,7 @@
     <div class="container">
         <div class="products">
             <div class="dog">
-                
+
             </div>
         </div>
     </div>
