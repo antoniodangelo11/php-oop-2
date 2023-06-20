@@ -1,9 +1,9 @@
 <?php
 
 class Kennel extends Product {
-    private function __construct (
-        private array $material, 
-        private string $dimension,
-        private string $model,)
+    public function __construct (
+        public string $material, 
+        public string $dimension,
+        public string $model,)
     {}
 }

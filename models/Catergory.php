@@ -1,7 +1,7 @@
 <?php
 
-class Type {
+class Category {
     public function __construct (
-        public string $type
+        public string $name,
     ) {}
 }

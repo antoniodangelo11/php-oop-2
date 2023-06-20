@@ -1,9 +1,9 @@
 <?php
 
 class Game extends Product {
-    private function __construct (
-        private string $age, 
-        private string $dimension,
-        private array $type,)
+    public function __construct (
+        public string $age, 
+        public string $dimension,
+        public string $type,)
     {}
 }

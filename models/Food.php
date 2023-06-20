@@ -1,10 +1,10 @@
 <?php 
 
 class Food extends Product {
-    private function __construct (
+    public function __construct (
         public string $age, 
-        private string $weight,
-        private array $type,
-        private array $taste,)
+        public string $weight,
+        public string $type,
+    )
     {}
 }

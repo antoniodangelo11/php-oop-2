@@ -2,12 +2,12 @@
 
 class Product {
     public function __construct (
-        protected string $title, 
-        private int $price, 
-        private string $img, 
-        private string $category,
-        private string $description,
-        private string $availability,)
+        public string $title, 
+        public int $price, 
+        public string $img, 
+        public array $category,
+        public string $description,
+        public string $availability,)
     {}
 
     // Metodo per raggrupare tutte le info
