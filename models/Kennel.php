@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-class Food extends Product {
+class Kennel extends Product {
     public function __construct(public string $meat, public string $fish)
     {}
 }

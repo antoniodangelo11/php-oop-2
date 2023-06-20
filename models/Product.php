@@ -1,6 +1,6 @@
 <?php
 
-class Products {
+class Product {
     public function __construct(public string $title, public int $price, public string $img, public string $type)
     {}
 
