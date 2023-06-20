@@ -4,8 +4,6 @@
     include __DIR__ . '/models/Game.php';
     include __DIR__ . '/models/Kennel.php';
     include __DIR__ . '/db.php';
-
-    $Products = new Product('Prodotto', 200, 'imamgine', 'tipo');
 ?>
 
 <!DOCTYPE html>
@@ -18,12 +16,8 @@
 <body>
     <div class="container">
         <div class="products">
-            <div class="game_product">
-
-            </div>
-
-            <div class="food_product">
-
+            <div class="dog">
+                
             </div>
         </div>
     </div>
