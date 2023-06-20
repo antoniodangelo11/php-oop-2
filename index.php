@@ -1,4 +1,9 @@
-<?php include __DIR__ . '/models/Products.php'
+<?php
+    include __DIR__ . '/models/Products.php';
+    include __DIR__ . '/models/Food.php';
+    include __DIR__ . '/db.php';
+
+    $Products = new Products('Prodotto', 200, 'imamgine', 'tipo');
 ?>
 
 <!DOCTYPE html>
@@ -9,6 +14,10 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="products">
+            <?= $Products->getAllInfo() ?>
+        </div>
+    </div>
 </body>
 </html>
