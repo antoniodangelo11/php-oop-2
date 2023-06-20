@@ -3,7 +3,7 @@
     include __DIR__ . '/models/Food.php';
     include __DIR__ . '/models/Game.php';
     include __DIR__ . '/models/Kennel.php';
-    include __DIR__ . '/models/Catergory.php';
+    include __DIR__ . '/models/Category.php';
     include __DIR__ . '/db.php';
 ?>
 
