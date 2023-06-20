@@ -2,8 +2,8 @@
 
 class Kennel extends Product {
     private function __construct (
-        private string $material, 
+        private array $material, 
         private string $dimension,
-        private array $type,)
+        private string $type,)
     {}
 }
