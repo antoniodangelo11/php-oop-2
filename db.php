@@ -1,5 +1,28 @@
 <?php
 
+$arrTaste = [
+    1 => "Chicken",
+    2 => "Beef",
+    3 => "Fish",
+    4 => "Tuna",
+    5 => "Salmon",
+    6 => "Shrimp",
+];
+
+$arrType = [
+    1 => "Chewing",
+    2 => "Fetching",
+    3 => "Puzzle",
+    4 => "Swatting",
+    5 => "Jumping",
+];
+
+$arrMaterial = [
+    1 => "Plastic",
+    2 => "Wood",
+    3 => "Fabric",
+];
+
 $products = [
     'food' => [
         [
@@ -12,7 +35,7 @@ $products = [
             'weight'       => 10,
             'type'         => 'Dry',
             'age'          => 'Adult',
-            'taste'        => ['Chicken', 'Beef', 'Fish']
+            'taste'        => new Taste[],
         ],
         [
             'category'     => 'cat',
@@ -24,7 +47,7 @@ $products = [
             'weight'       => 5,
             'type'         => 'Wet',
             'age'          => 'Kitten',
-            'taste'        => ['Tuna', 'Salmon', 'Shrimp']
+            'taste'        => new Taste[],
         ]
     ],
     'games' => [
@@ -37,7 +60,7 @@ $products = [
             'price'        => 30,
             'age'          => 'Adult',
             'dimension'    => 'Large',
-            'type'         => ['Chewing', 'Fetching', 'Puzzle']
+            'type'         => new Type[],
         ],
         [
             'category'     => 'cat',
@@ -48,7 +71,7 @@ $products = [
             'price'        => 12,
             'age'          => 'Kitten',
             'dimension'    => 'Small',
-            'type'         => ['Swatting', 'Jumping']
+            'type'         => new Type[],
         ]
     ],
     'kennels' => [
@@ -59,7 +82,7 @@ $products = [
             'description'  => 'Durable and easy to clean dog kennel',
             'availability' => 'In stock',
             'price'        => 80,
-            'material'     => ['Plastic'],
+            'material'     => new Material[],
             'dimension'    => 'Medium',
             'type'         => 'Outdoor'
         ],
@@ -70,7 +93,7 @@ $products = [
             'description'  => 'Stylish cat house for indoor use',
             'availability' => 'Out of stock',
             'price'        => 100,
-            'material'     => ['Wood', 'Fabric'],
+            'material'     => new Material[],
             'dimension'    => 'Small',
             'type'         => 'Indoor'
         ]

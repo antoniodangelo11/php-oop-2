@@ -13,6 +13,6 @@ class Product {
     // Metodo per raggrupare tutte le info
     public function getAllInfo()
     {
-        return $this->title . '<br>' . $this->price . '<br>' . $this->img . '<br>' . $this->category;
+        return $this->title . '<br>' . $this->price . '<br>' . $this->img . '<br>' . $this->category . '<br>' . $this->description . '<br>' . $this->availability;
     }
 }
