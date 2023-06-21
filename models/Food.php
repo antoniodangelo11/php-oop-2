@@ -8,8 +8,8 @@ class Food extends Product {
         string $img,
         Category $category,
         string $description,
-        public string $age, 
-        public string $weight,
+        protected string $age, 
+        protected string $weight,
     ) {
         parent::__construct($id, $title, $price, $img, $category, $description);
     }

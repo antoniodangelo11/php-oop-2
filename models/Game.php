@@ -8,7 +8,7 @@ class Game extends Product {
         string $img,
         Category $category,
         string $description,
-        public string $type,
+        protected string $type,
     ) {
         parent::__construct($id, $title, $price, $img, $category, $description);
     }
