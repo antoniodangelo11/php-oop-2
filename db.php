@@ -1,44 +1,12 @@
 <?php
 
-$arrCategory = [
-    new Category('Dog'),
-    new Category('Cat'),
+$categories = [
+    new Category(1, 'Cats', 'Gatti siamesi, soriani etc..'),
+    new Category(1, 'Dogs', 'Cani di razza etc..'),
 ];
 
-$dataProducts = [
-    [
-        'title'        => 'Dog Food',
-        'price'        => 20,
-        'img'          => 'food1.jpg',
-        'category'     => [0],
-        'description'  => 'Premium dog food for all breeds',
-        'availability' => 'In stock',
-    ],
-    [
-        'title'        => 'Cat Food',
-        'price'        => 15,
-        'img'          => 'food2.jpg',
-        'category'     => [1],
-        'description'  => 'Healthy cat food for all ages',
-        'availability' => 'Out of stock',
-    ],
+$arrProducts = [
+    new Food(1, 'Croccattini', 700, 'stringa immagine', $categories[0], 'descrizione', 'età', 'peso'),
+    new Game(1, 'Osso di gomma', 1000, 'stringa immagine', $categories[0], 'descrizione', 'tipo di gioco'),
+    new Kennel(1, 'Trasportino', 5000, 'stringa immagine', $categories[0], 'descrizione', 'materiale', 'modello'),
 ];
-
-$arrProducts = [];
-foreach ($dataProducts as $product) {
-    $productCategory = [];
-    foreach ($product['category'] as $index) {
-        $productCategory[] = $arrCategory[$index];
-    }
-
-    $arrProducts[] = new Category(
-        $product['title'],
-        $product['price'],
-        $product['img'],
-        $productCategory,
-        $product['description'],
-        $product['availability'],
-    );
-}
-
-// var_dump($dataProducts);

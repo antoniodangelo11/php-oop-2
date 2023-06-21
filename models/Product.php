@@ -2,17 +2,21 @@
 
 class Product {
     public function __construct (
-        public string $title, 
-        public int $price, 
-        public string $img, 
-        public array $category,
-        public string $description,
-        public string $availability,)
+        protected int $id,
+        protected string $title, 
+        protected int $price, 
+        protected string $img, 
+        protected Category $category,
+        protected string $description,
+    )
     {}
 
-    // Metodo per raggrupare tutte le info
-    public function getAllInfo()
+    public function printCard()
     {
-        return $this->title . '<br>' . $this->price . '<br>' . $this->img . '<br>' . $this->category . '<br>' . $this->description . '<br>' . $this->availability;
+        return 'sono il prodotto di ' . $this->title . '<br>';
+    }
+
+    public function getFormattedPrice() {
+        return $this->price / 100 . ' €';
     }
 }
